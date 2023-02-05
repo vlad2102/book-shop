@@ -1,7 +1,7 @@
 """Module to store environment configs"""
 
 import os
-from typing import Literal, Final
+from typing import Literal, Final, Type
 
 _EnvT = Literal['DEVELOPMENT', 'TESTING']
 
@@ -25,10 +25,10 @@ class TestingConfig(Config):
     SQLALCHEMY_DATABASE_URI: Final = "sqlite:///test.db"
 
 
-def get_environment_config() -> str:
-    """To supports severral environments"""
+def get_environment_config_object() -> Type[Config]:
+    """To supports several environments"""
     match Config.ENV:
         case 'DEVELOPMENT':
-            return "config.DevelopmentConfig"
+            return DevelopmentConfig
         case 'TESTING':
-            return "config.TestingConfig"
+            return TestingConfig
