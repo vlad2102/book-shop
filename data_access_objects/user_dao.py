@@ -29,9 +29,8 @@ class UserDao:
         return db.session.query(User).all()
 
     @staticmethod
-    def delete_by_id(user_id: int) -> None:
+    def delete(user: User) -> None:
         """Deletes user from database"""
-        user = db.session.query(User).filter_by(id=user_id).first()
         db.session.delete(user)
         db.session.commit()
 

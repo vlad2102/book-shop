@@ -29,9 +29,8 @@ class ProductDao:
         return db.session.query(Product).all()
 
     @staticmethod
-    def delete_by_id(product_id: int) -> None:
+    def delete(product: Product) -> None:
         """Deletes product from database"""
-        product = db.session.query(Product).filter_by(id=product_id).first()
         db.session.delete(product)
         db.session.commit()
 

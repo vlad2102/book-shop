@@ -29,9 +29,8 @@ class BookingDao:
         return db.session.query(Booking).all()
 
     @staticmethod
-    def delete_by_id(booking_id: int) -> None:
+    def delete(booking: Booking) -> None:
         """Deletes booking from database"""
-        booking = db.session.query(Booking).filter_by(id=booking_id).first()
         db.session.delete(booking)
         db.session.commit()
 
