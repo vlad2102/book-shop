@@ -1,4 +1,4 @@
-"""User ORM Schema."""
+"""User ORM Schema"""
 
 from database import db
 from dependencies import ma
@@ -6,7 +6,7 @@ from models.user_model import User
 
 
 class UserSchema(ma.SQLAlchemySchema):
-    """User schema."""
+    """User schema"""
 
     class Meta:
         model = User

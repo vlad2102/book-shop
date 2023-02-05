@@ -1,4 +1,4 @@
-"""User service module."""
+"""User service module"""
 from flask import request, jsonify
 from marshmallow import ValidationError
 from sqlalchemy.exc import IntegrityError
@@ -13,7 +13,7 @@ userListSchema = UserSchema(many=True)
 
 
 class UserService:
-    """To support CRUD operations for user model."""
+    """To support CRUD operations for user model"""
 
     @staticmethod
     def get_by_id(user_id: int):

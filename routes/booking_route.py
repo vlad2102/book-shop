@@ -1,4 +1,4 @@
-"""Booking routes module."""
+"""Booking routes module"""
 
 from flask import request
 
@@ -6,7 +6,7 @@ from controllers.booking_controller import BookingController
 
 
 def booking_control():
-    """URL to collect information about bookings or create new one."""
+    """URL to collect information about bookings or create new one"""
     match request.method:
         case 'POST':
             return BookingController.create()
@@ -15,7 +15,7 @@ def booking_control():
 
 
 def booking_manipulation(booking_id: int):
-    """URL to get, update or delete booking information."""
+    """URL to get, update or delete booking information"""
     match request.method:
         case 'GET':
             return BookingController.get_by_id(booking_id)

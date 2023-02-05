@@ -1,10 +1,10 @@
-"""Product controller module."""
+"""Product controller module"""
 
 from services.product_service import ProductService
 
 
 class ProductController:
-    """Product class to communicate directly with the services."""
+    """Product class to communicate directly with the services"""
 
     @staticmethod
     def get_by_id(product_id: int):

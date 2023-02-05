@@ -1,4 +1,4 @@
-"""Booking service module."""
+"""Booking service module"""
 from flask import request, jsonify
 from marshmallow import ValidationError
 from sqlalchemy.exc import IntegrityError
@@ -13,7 +13,7 @@ bookingListSchema = BookingSchema(many=True)
 
 
 class BookingService:
-    """To support CRUD operations for booking model."""
+    """To support CRUD operations for booking model"""
 
     @staticmethod
     def get_by_id(booking_id: int):

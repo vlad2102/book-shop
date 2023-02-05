@@ -1,10 +1,10 @@
-"""Module to manage Booking model."""
+"""Module to manage Booking model"""
 
 from database import db
 
 
 class Booking(db.Model):
-    """Booking table specification."""
+    """Booking table specification"""
 
     __tablename__ = "bookings"
     id = db.Column(db.Integet, primary_key=True)

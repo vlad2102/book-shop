@@ -1,4 +1,4 @@
-"""Module for Booking Data Access Object."""
+"""Module for Booking Data Access Object"""
 from typing import Final
 
 from database import db
@@ -6,7 +6,7 @@ from models.booking_model import Booking
 
 
 class BookingDao:
-    """Data Access Object for Booking Model."""
+    """Data Access Object for Booking Model"""
 
     _BOOKING_NOT_FOUND_PATTERN: Final = "Booking not found for id: {booking_id}"
 

@@ -1,10 +1,10 @@
-"""Booking controller module."""
+"""Booking controller module"""
 
 from services.booking_service import BookingService
 
 
 class BookingController:
-    """Booking class to communicate directly with the services."""
+    """Booking class to communicate directly with the services"""
 
     @staticmethod
     def get_by_id(booking_id: int):

@@ -1,4 +1,4 @@
-"""Product ORM Schema."""
+"""Product ORM Schema"""
 
 from database import db
 from dependencies import ma
@@ -6,7 +6,7 @@ from models.product_model import Product
 
 
 class ProductSchema(ma.SQLAlchemySchema):
-    """Product schema."""
+    """Product schema"""
 
     class Meta:
         model = Product

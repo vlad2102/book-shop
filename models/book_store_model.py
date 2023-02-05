@@ -1,10 +1,10 @@
-"""Module to manage BookStore model."""
+"""Module to manage BookStore model"""
 
 from database import db
 
 
 class BookStore(db.Model):
-    """BookStore table specification."""
+    """BookStore table specification"""
 
     __tablename__ = "book_store"
     id = db.Column(db.Integet, primary_key=True)

@@ -1,4 +1,4 @@
-"""User routes module."""
+"""User routes module"""
 
 from flask import request
 
@@ -6,7 +6,7 @@ from controllers.user_controller import UserController
 
 
 def user_control():
-    """URL to collect information about users or create new one."""
+    """URL to collect information about users or create new one"""
     match request.method:
         case 'POST':
             return UserController.create()
@@ -15,7 +15,7 @@ def user_control():
 
 
 def user_manipulation(user_id: int):
-    """URL to get, update or delete user information."""
+    """URL to get, update or delete user information"""
     match request.method:
         case 'GET':
             return UserController.get_by_id(user_id)

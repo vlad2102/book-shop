@@ -1,4 +1,4 @@
-"""Product service module."""
+"""Product service module"""
 from flask import request, jsonify
 from marshmallow import ValidationError
 from sqlalchemy.exc import IntegrityError
@@ -13,7 +13,7 @@ productListSchema = ProductSchema(many=True)
 
 
 class ProductService:
-    """To support CRUD operations for product model."""
+    """To support CRUD operations for product model"""
 
     @staticmethod
     def get_by_id(product_id: int):

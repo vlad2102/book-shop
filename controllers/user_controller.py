@@ -1,10 +1,10 @@
-"""User controller module."""
+"""User controller module"""
 
 from services.user_service import UserService
 
 
 class UserController:
-    """User class to communicate directly with the services."""
+    """User class to communicate directly with the services"""
 
     @staticmethod
     def get_by_id(user_id: int):

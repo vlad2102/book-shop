@@ -1,4 +1,4 @@
-"""Module to manage database setup."""
+"""Module to manage database setup"""
 
 from flask_sqlalchemy import SQLAlchemy
 

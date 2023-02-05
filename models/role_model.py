@@ -1,10 +1,10 @@
-"""Module to manage Role model."""
+"""Module to manage Role model"""
 
 from database import db
 
 
 class Role(db.Model):
-    """Role table specification."""
+    """Role table specification"""
 
     __tablename__ = "roles"
     id = db.Column(db.Integet, primary_key=True)

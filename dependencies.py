@@ -1,4 +1,4 @@
-"""Marshmallow module."""
+"""Marshmallow module"""
 
 from flask_marshmallow import Marshmallow
 

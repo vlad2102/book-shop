@@ -1,4 +1,4 @@
-"""Booking ORM Schema."""
+"""Booking ORM Schema"""
 
 from database import db
 from dependencies import ma
@@ -6,7 +6,7 @@ from models.booking_model import Booking
 
 
 class BookingSchema(ma.SQLAlchemySchema):
-    """Booking schema."""
+    """Booking schema"""
 
     class Meta:
         model = Booking

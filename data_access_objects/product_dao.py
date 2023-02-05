@@ -1,4 +1,4 @@
-"""Module for Product Data Access Object."""
+"""Module for Product Data Access Object"""
 from typing import Final
 
 from database import db
@@ -6,7 +6,7 @@ from models.product_model import Product
 
 
 class ProductDao:
-    """Data Access Object for Product Model."""
+    """Data Access Object for Product Model"""
 
     _PRODUCT_NOT_FOUND_PATTERN: Final = "Product not found for id: {product_id}"
 

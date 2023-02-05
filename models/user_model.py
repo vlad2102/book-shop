@@ -1,10 +1,10 @@
-"""Module to manage User model."""
+"""Module to manage User model"""
 
 from database import db
 
 
 class User(db.Model):
-    """User table specification."""
+    """User table specification"""
 
     __tablename__ = "users"
     id = db.Column(db.Integet, primary_key=True)

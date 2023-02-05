@@ -1,4 +1,4 @@
-"""Module for User Data Access Object."""
+"""Module for User Data Access Object"""
 from typing import Final
 
 from database import db
@@ -6,7 +6,7 @@ from models.user_model import User
 
 
 class UserDao:
-    """Data Access Object for User Model."""
+    """Data Access Object for User Model"""
 
     _USER_NOT_FOUND_PATTERN: Final = "User not found for id: {user_id}"
 
