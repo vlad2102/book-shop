@@ -4,7 +4,7 @@ from marshmallow import ValidationError
 from sqlalchemy.exc import IntegrityError
 
 from data_access_objects.product_dao import ProductDao
-from schemas.product_schema import ProductSchema
+from models.product_schema import ProductSchema
 
 # schema to manage single model data
 productSchema = ProductSchema()

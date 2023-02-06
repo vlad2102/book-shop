@@ -4,7 +4,7 @@ from marshmallow import ValidationError
 from sqlalchemy.exc import IntegrityError
 
 from data_access_objects.user_dao import UserDao
-from schemas.user_schema import UserSchema
+from models.user_schema import UserSchema
 
 # schema to manage single model data
 userSchema = UserSchema()

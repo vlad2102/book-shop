@@ -4,7 +4,7 @@ from marshmallow import ValidationError
 from sqlalchemy.exc import IntegrityError
 
 from data_access_objects.booking_dao import BookingDao
-from schemas.booking_schema import BookingSchema
+from models.booking_schema import BookingSchema
 
 # schema to manage single model data
 bookingSchema = BookingSchema()
